@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Landing Page</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #fff;
+        overflow-x: hidden;
+      }
+      .title-font {
+        font-family: "Volkhov", serif;
+      }
+    </style>
+  </head>
+  <body class="text-[#212832]">
+    <!-- Background Decore (Top Right Corner decoration) -->
+    <div
+      class="absolute -top-4 -right-20 z-0 pointer-events-none max-w-[50%] md:max-w-none"
+    >
+      <img src="Decore.png" alt="" class="w-full h-auto" />
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="w-full relative z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between"
+      >
+        <img
+          src="Jadoo.png"
+          alt="Jadoo Logo"
+          class="h-8 md:h-10 object-contain"
+        />
+
+        <!-- Navigation Menu -->
+        <nav class="hidden lg:flex items-center space-x-10 text-sm font-medium">
+          <ul class="flex items-center space-x-10 text-[#14183E]">
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Hotels</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Flights</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Bookings</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Login</a>
+            </li>
+          </ul>
+          <button
+            class="border border-[#212832] rounded-md px-5 py-2 hover:bg-[#212832] hover:text-white transition"
+          >
+            Sign up
+          </button>
+          <select class="bg-transparent outline-none cursor-pointer">
+            <option value="En">En</option>
+          </select>
+        </nav>
+
+        <!-- Mobile Menu Toggle Button  -->
+        <button class="lg:hidden p-2 text-[#14183E]">
+          <svg
+            xmlns="http://w3.org"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="w-full relative z-10 flex flex-col gap-24 md:gap-32 pb-24">
+      <!-- Hero Section -->
+      <section
+        class="max-w-7xl mx-auto px-6 md:px-12 pt-8 md:pt-16 grid lg:grid-cols-2 gap-12 lg:gap-6 items-center w-full"
+      >
+        <!-- Hero Text Left -->
+        <div
+          class="flex flex-col gap-2 order-2 lg:order-1 text-center lg:text-left items-center lg:items-start"
+        >
+          <p
+            class="text-[#DF6951] font-bold tracking-wide text-sm md:text-base"
+          >
+            BEST DESTINATIONS AROUND THE WORLD
+          </p>
+
+          <div class="relative inline-block">
+            <h1
+              class="title-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold text-[#181E4B]"
+            >
+              Travel, enjoy and live a new and full life
+            </h1>
+            <!-- Underlying decorative stroke asset placed organically under the text -->
+            <img
+              src="Decore (2).png"
+              alt=""
+              class="hidden sm:block absolute top-16 bottom-4 right-10 w-[250px] md:w-[350px] -z-10"
+            />
+          </div>
+
+          <p
+            class="mt-4 text-[#5E6282] leading-7 md:leading-8 max-w-md text-sm md:text-base"
+          >
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed. Park gate sell they west hard
+            for the.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row items-center gap-6 mt-6 w-full sm:w-auto"
+          >
+            <button
+              class="bg-[#F1A501] text-white px-7 py-4 rounded-xl shadow-lg hover:bg-[#d69300] transition font-medium text-sm md:text-base w-full sm:w-auto"
+            >
+              Find out more
+            </button>
+            <button
+              class="flex items-center justify-center gap-3 group text-[#5E6282] hover:text-[#DF6951] transition"
+            >
+              <img
+                src="Playbutton.png"
+                alt=""
+                class="w-12 h-12 md:w-14 md:h-14 group-hover:scale-105 transition"
+              />
+              <span class="font-medium text-sm md:text-base">Play Demo</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Images Right -->
+        <div
+          class="relative order-1 lg:order-2 flex justify-center items-center w-full min-h-[300px] sm:min-h-[450px] md:min-h-[550px]"
+        >
+          <!-- Background plane layer assets -->
+          <img
+            src="plane.png"
+            alt=""
+            class="absolute z-20 top-4 left-24 w-16 md:w-24 opacity-80"
+          />
+          <img
+            src="plane.png"
+            alt=""
+            class="absolute z-20 top-16 right-4 w-16 md:w-24 opacity-80"
+          />
+
+          <!-- Main Traveller Image -->
+          <div class="relative z-30 max-w-[85%] sm:max-w-[75%] lg:max-w-full">
+            <img
+              src="traveller.png"
+              alt="Traveller"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="max-w-7xl mx-auto px-6 md:px-12 w-full">
+        <div class="text-center flex flex-col items-center mb-16">
+          <img src="Group 4.png" alt="" class="absolute z-20 right-14" />
+          <p
+            class="text-xs md:text-sm text-[#5E6282] font-semibold tracking-widest uppercase"
+          >
+            Category
+          </p>
+          <h2
+            class="title-font text-3xl sm:text-4xl md:text-5xl text-[#14183E] font-bold mt-2"
+          >
+            We Offer Best Services
+          </h2>
+        </div>
+
+        <!-- Services Grid Cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+          <!-- Card 1 -->
+          <div
+            class="relative flex flex-col justify-center items-center text-center gap-4 p-8 rounded-[36px] hover:shadow-2xl transition bg-white border border-gray-50 group"
+          >
+            <div
+              class="absolute -bottom-4 -left-4 w-16 h-16 bg-[#DF6951] rounded-tl-[24px] rounded-br-[10px] -z-10 opacity-0 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div class="h-20 flex items-center justify-center">
+              <img
+                src="Group 48.png"
+                alt="Weather icon"
+                class="h-full object-contain"
+              />
+            </div>
+            <h3 class="font-semibold text-lg text-[#1E1D4C]">
+              Calculated Weather
+            </h3>
+            <p class="text-[#5E6282] text-sm leading-6 max-w-[200px]">
+              Built Wicket longer admire do barton vanity itself do in it.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="relative flex flex-col justify-center items-center text-center gap-4 p-8 rounded-[36px] hover:shadow-2xl transition bg-white border border-gray-50 group"
+          >
+            <!-- Hidden by default, appears on card container hover / desktop setup context -->
+            <div
+              class="absolute -bottom-4 -left-4 w-16 h-16 bg-[#DF6951] rounded-tl-[24px] rounded-br-[10px] -z-10 opacity-0 group-hover:opacity-100 transition duration-300"
+            ></div>
+
+            <div class="h-20 flex items-center justify-center">
+              <img
+                src="Group 51.png"
+                alt="Flight icon"
+                class="h-full object-contain"
+              />
+            </div>
+            <h3 class="font-semibold text-lg text-[#1E1D4C]">Best Flights</h3>
+            <p class="text-[#5E6282] text-sm leading-6 max-w-[200px]">
+              Engrossed listening. Park gate sell they west hard for the.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="relative flex flex-col justify-center items-center text-center gap-4 p-8 rounded-[36px] hover:shadow-2xl transition bg-white border border-gray-50"
+          >
+            <div
+              class="absolute -bottom-4 -left-4 w-16 h-16 bg-[#DF6951] rounded-tl-[24px] rounded-br-[10px] -z-10 opacity-0 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div class="h-20 flex items-center justify-center">
+              <img
+                src="Group 50.png"
+                alt="Events icon"
+                class="h-16 object-contain"
+              />
+            </div>
+            <h3 class="font-semibold text-lg text-[#1E1D4C]">Local Events</h3>
+            <p class="text-[#5E6282] text-sm leading-6 max-w-[200px]">
+              Barton vanity itself do in it. Preferd to men it engrossed
+              listening.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="relative flex flex-col justify-center items-center text-center gap-4 p-8 rounded-[36px] hover:shadow-2xl transition bg-white border border-gray-50"
+          >
+            <div
+              class="absolute -bottom-4 -left-4 w-16 h-16 bg-[#DF6951] rounded-tl-[24px] rounded-br-[10px] -z-10 opacity-0 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div class="h-20 flex items-center justify-center">
+              <img
+                src="Group 49.png"
+                alt="Customization icon"
+                class="h-16 object-contain"
+              />
+            </div>
+            <h3 class="font-semibold text-lg text-[#1E1D4C]">Customization</h3>
+            <p class="text-[#5E6282] text-sm leading-6 max-w-[200px]">
+              We deliver outsourced aviation services for military customers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destinations Section -->
+      <section class="max-w-7xl mx-auto px-12 md:px-24 w-full">
+        <div class="text-center flex flex-col items-center mb-16">
+          <p
+            class="text-xs md:text-sm text-[#5E6282] font-semibold tracking-widest"
+          >
+            Top Selling
+          </p>
+          <h2
+            class="title-font text-3xl sm:text-4xl md:text-5xl text-[#14183E] font-bold mt-2"
+          >
+            Top Destinations
+          </h2>
+        </div>
+
+        <!-- Destinations Grid Cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-14">
+          <!-- Card 1 -->
+          <div
+            class="flex flex-col rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 bg-white group cursor-pointer"
+          >
+            <!-- Image Wrap -->
+            <div class="overflow-hidden aspect-[3/4] relative max-h-[320px]">
+              <img
+                src="card1.png"
+                alt="Rome, Italy"
+                class="w-full h-full object-fill group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <!-- Content Info Details -->
+            <div class="p-6 flex flex-col gap-4 bg-white">
+              <div
+                class="flex justify-between items-center text-[#5E6282] font-medium text-base md:text-lg"
+              >
+                <span class="text-[#212832]">Rome, Italy</span>
+                <span>$5,42k</span>
+              </div>
+              <div class="flex items-center gap-3 text-[#5E6282] text-sm">
+                <!-- Navigation Arrow Icon -->
+                <img src="navigation 1.png" alt="" />
+                <span>12 Days Trip</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2  -->
+          <div
+            class="flex flex-col rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 bg-white group cursor-pointer"
+          >
+            <!-- Image Wrap -->
+            <div class="overflow-hidden aspect-[3/4] relative max-h-[320px]">
+              <img
+                src="card2.jpg"
+                alt="London, UK"
+                class="w-full h-full object-fill group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <!-- Content Info Details -->
+            <div class="p-6 flex flex-col gap-4 bg-white">
+              <div
+                class="flex justify-between items-center text-[#5E6282] font-medium text-base md:text-lg"
+              >
+                <span class="text-[#212832]">London, UK</span>
+                <span>$4.2k</span>
+              </div>
+              <div class="flex items-center gap-3 text-[#5E6282] text-sm">
+                <img src="navigation 1.png" alt="" />
+                <span>12 Days Trip</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex flex-col rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 bg-white group cursor-pointer sm:col-span-2 lg:col-span-1 max-w-sm sm:max-w-none mx-auto w-full"
+          >
+            <!-- Image Wrap -->
+            <div class="overflow-hidden aspect-[3/4] relative max-h-[320px]">
+              <img
+                src="card3.png"
+                alt="Full Europe Tour"
+                class="w-full h-full object-fill group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <!-- Content Info Details -->
+            <div class="p-6 flex flex-col gap-4 bg-white">
+              <div
+                class="flex justify-between items-center text-[#5E6282] font-medium text-base md:text-lg"
+              >
+                <span class="text-[#212832]">Full Europe</span>
+                <span>$15k</span>
+              </div>
+              <div class="flex items-center gap-3 text-[#5E6282] text-sm">
+                <img src="navigation 1.png" alt="" />
+                <span>28 Days Trip</span>
+              </div>
+            </div>
+          </div>
+          <img
+            src="Decore (3).png"
+            alt=""
+            class="absolute -z-20 right-40 pt-32"
+          />
+        </div>
+      </section>
+
+      <!-- Book a trip -->
+
+      <section class="max-w-7xl mx-auto px-12 md:px-24 w-full">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+          <!-- Left side -->
+          <div class="flex flex-col space-y-12">
+            <p
+              class="text-xs md:text-sm text-[#5E6282] font-semibold tracking-widest"
+            >
+              Easy and Fast
+            </p>
+            <h2
+              class="title-font text-3xl sm:text-4xl md:text-5xl text-[#14183E] font-bold mt-2"
+            >
+              Book Your Next Trip In 3 Easy Steps
+            </h2>
+            <div class="flex gap-4">
+              <img src="Group 7.png" alt="" />
+              <div class="">
+                <h3
+                  class="text-sm md:text-lg text-[#5E6282] font-bold tracking-widest"
+                >
+                  Choose Destination
+                </h3>
+                <p class="text-sm md:text-lg tracking-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <img src="Group 12.png" alt="" />
+              <div class="">
+                <h3
+                  class="text-sm md:text-lg text-[#5E6282] font-bold tracking-widest"
+                >
+                  Make Payment
+                </h3>
+                <p class="text-sm md:text-lg tracking-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <img src="Group 11.png" alt="" />
+              <div class="">
+                <h3
+                  class="text-sm md:text-lg text-[#5E6282] font-bold tracking-widest"
+                >
+                  Reach Airport on Selected Date
+                </h3>
+                <p class="text-sm md:text-lg tracking-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side -->
+          <div class="flex flex-col items-center mb-16">
+            <div
+              class="flex flex-col space-y-4 p-8 mt-20 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 bg-white group cursor-pointer relative"
+            >
+              <img src="Rectangle 17.jpg" alt="" class="" />
+              <p class="text-xl md:text-2xl font-semibold">Trip To Greece</p>
+              <span class="text-xs md:text-sm text-[#5E6282]"
+                >14-29 June | by Robbin Joseph</span
+              >
+              <div class="flex space-x-4">
+                <img src="LEAF.png" alt="" />
+                <img src="map icon.png" alt="" />
+                <img src="send.png" alt="" />
+              </div>
+              <div class="flex justify-between">
+                <div class="flex space-x-4">
+                  <img src="Group.png" alt="" />
+                  <span class="text-xs md:text-sm text-[#5E6282]"
+                    >24 people going</span
+                  >
+                </div>
+                <div>
+                  <img src="heart (6) 1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center space-x-4 p-4 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 bg-white group cursor-pointer absolute right-56 mt-72"
+            >
+              <div>
+                <img src="Mask Group.png" alt="" />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <span class="text-xs md:text-sm text-[#5E6282]">Ongoing</span>
+                <h3 class="text-xl md:text-2xl font-semibold">Trip to rome</h3>
+                <span class="text-sm md:text-lg text-[#aa73fc] font-bold"
+                  >40%
+                  <span class="text-black font-normal">completed</span></span
+                >
+                <div
+                  class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700"
+                >
+                  <div
+                    class="bg-purple-400 h-1.5 rounded-full"
+                    style="width: 40%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+
+      <section class="max-w-7xl mx-auto px-12 md:px-24 w-full">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 space-x-4">
+          <div class="flex flex-col space-y-4">
+            <p
+              class="text-sm md:text-lg text-[#5E6282] font-semibold tracking-widest"
+            >
+              TESTIMONIALS
+            </p>
+            <h2
+              class="title-font text-4xl sm:text-5xl md:text-6xl text-[#14183E] font-bold mt-2"
+            >
+              What People Say About Us.
+            </h2>
+            <div class="flex space-x-10 py-10">
+              <img src="Ellipse 25.png" alt="" />
+              <img src="Ellipse 26.png" alt="" />
+              <img src="Ellipse 26.png" alt="" />
+            </div>
+          </div>
+          <div class="sm:w-1/2 md:w-1/3 mr-8">
+            <div
+              class="space-x-6 space-y-2 pl-8 py-4 w-[600px] rounded-3xl shadow-md hover:shadow-2xl transition duration-300 bg-white group cursor-pointer absolute z-30"
+            >
+              <img src="Image (1).png" alt="" />
+              <p
+                class="text-sm md:text-lg text-[#5E6282] font-normal tracking-normal px-14"
+              >
+                “On the Windows talking painted pasture yet its express parties
+                use. Sure last upon he same as knew next. Of believed or
+                diverted no.”
+              </p>
+              <div class="flex flex-col">
+                <span
+                  class="text-lg md:text-xl text-[#5E6282] font-semibold tracking-normal"
+                  >Mike taylor</span
+                >
+                <span
+                  class="text-xs md:text-sm text-[#5E6282] font-normal tracking-normal"
+                  >Lahore, Pakistan</span
+                >
+              </div>
+            </div>
+            <div
+              class="space-x-6 space-y-2 pl-8 py-4 w-[600px] rounded-3xl shadow-md hover:shadow-2xl transition duration-300 bg-white group cursor-pointer absolute z-10 right-20 mt-20"
+            >
+              <img src="Image (1).png" alt="" />
+              <p
+                class="text-sm md:text-lg text-[#5E6282] font-normal tracking-normal px-14"
+              >
+                “On the Windows talking painted pasture yet its express parties
+                use. Sure last upon he same as knew next. Of believed or
+                diverted no.”
+              </p>
+              <div class="flex flex-col">
+                <span
+                  class="text-lg md:text-xl text-[#5E6282] font-semibold tracking-normal"
+                  >Chris Thomas</span
+                >
+                <span
+                  class="text-xs md:text-sm text-[#5E6282] font-normal tracking-normal"
+                  >CEO of Red Button</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="absolute z-30 right-10 mt-32">
+            <img src="Pagination.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Logos -->
+
+      <section class="max-w-7xl mx-auto px-12 md:px-24 w-full">
+        <div class="flex justify-between items-center space-x-10">
+          <img src="axon.png" alt="" />
+          <img src="jetstar.png" alt="" />
+          <img src="expedia.png" alt="" />
+          <img src="qantas.png" alt="" />
+          <img src="alitalia.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+      <section
+        class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full relative my-12"
+      >
+        <img
+          src="Group 77.png"
+          alt=""
+          class="absolute z-40 -top-6 -right-3 w-16 md:w-24 pointer-events-none opacity-80"
+        />
+
+        <div
+          class="relative z-0 flex flex-col justify-center items-center text-center px-6 py-12 md:px-16 md:py-20 bg-[#DFD7F9] rounded-2xl rounded-tl-[60px] md:rounded-tl-[100px] overflow-hidden"
+        >
+          <img
+            src="Mask Group (1).png"
+            alt=""
+            class="absolute z-20 -left-20 bottom-0 h-1/2 md:h-full opacity-95 pointer-events-none"
+          />
+          <img
+            src="Mask Group (2).png"
+            alt=""
+            class="absolute -right-4 top-0 z-20 h-1/2 md:h-full opacity-95 pointer-events-none"
+          />
+          <p
+            class="relative z-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#5E6282] font-semibold tracking-normal max-w-3xl mb-8 md:mb-12"
+          >
+            Subscribe to get information, latest news and other interesting
+            offers about Jadoo
+          </p>
+          <div
+            class="relative z-10 flex flex-col sm:flex-row items-center gap-4 w-full max-w-lg px-2"
+          >
+            <div class="relative w-full">
+              <input
+                type="email"
+                placeholder="Your email"
+                required
+                class="w-full pl-5 pr-4 py-4 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF946D] shadow-sm bg-white text-base"
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full sm:w-auto bg-gradient-to-tl from-[#FF946D] to-[#FF7D68] hover:opacity-90 active:scale-[0.98] px-8 py-4 text-white font-medium text-lg rounded-xl shadow-md transition whitespace-nowrap"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer
+      class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24 w-full relative z-10 bg-white"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-8 mb-16"
+      >
+        <div
+          class="flex flex-col gap-4 sm:col-span-2 lg:col-span-1 text-center sm:text-left items-center sm:items-start"
+        >
+          <img
+            src="Jadoo.png"
+            alt="Jadoo Logo"
+            class="h-8 md:h-10 object-contain mb-2"
+          />
+          <p class="text-[#5E6282] text-sm leading-6 max-w-xs">
+            Book your trip in minute, get full Control for much longer.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-4 text-center sm:text-left items-center sm:items-start"
+        >
+          <h4 class="text-[#080809] font-bold text-lg md:text-xl mb-2">
+            Company
+          </h4>
+          <ul
+            class="flex flex-col gap-3 text-[#5E6282] font-medium text-sm md:text-base"
+          >
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Careers</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Mobile</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col gap-4 text-center sm:text-left items-center sm:items-start"
+        >
+          <h4 class="text-[#080809] font-bold text-lg md:text-xl mb-2">
+            Contact
+          </h4>
+          <ul
+            class="flex flex-col gap-3 text-[#5E6282] font-medium text-sm md:text-base"
+          >
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Help/FAQ</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Press</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Affilates</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col gap-4 text-center sm:text-left items-center sm:items-start"
+        >
+          <h4 class="text-[#080809] font-bold text-lg md:text-xl mb-2">More</h4>
+          <ul
+            class="flex flex-col gap-3 text-[#5E6282] font-medium text-sm md:text-base"
+          >
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition"
+                >Airlinefees</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition">Airlines</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#DF6951] transition"
+                >Low fare tips</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col gap-6 items-center sm:items-start text-center sm:text-left sm:col-span-2 md:col-span-1 lg:col-span-1"
+        >
+          <div class="flex items-center gap-4">
+            <!-- Facebook Icon -->
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-[#080809] hover:bg-[#DF6951] hover:text-white transition group"
+            >
+              <img src="Social.png" alt="" />
+            </a>
+
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#F9CE34] via-[#EE2A7B] to-[#6228D7] shadow-md flex items-center justify-center text-white hover:opacity-90 transition scale-110"
+            >
+              <img src="Social (1).png" alt="" />
+            </a>
+
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-[#080809] hover:bg-[#DF6951] hover:text-white transition"
+            >
+              <img src="Social (2).png" alt="" />
+            </a>
+          </div>
+
+          <div class="flex flex-col gap-4 items-center sm:items-start w-full">
+            <p
+              class="text-[#5E6282] font-semibold text-xs md:text-sm tracking-widest uppercase"
+            >
+              Discover our app
+            </p>
+
+            <div
+              class="flex items-center justify-center sm:justify-start gap-2 md:gap-3 w-full sm:w-auto"
+            >
+              <a
+                href="#"
+                class="flex items-center gap-2 bg-black text-white px-3 py-2 md:px-4 md:py-2.5 rounded-full hover:bg-[#212832] transition duration-200 cursor-pointer shadow-sm active:scale-95 w-full sm:w-auto min-w-[130px] md:min-w-[150px]"
+              >
+                <img
+                  src="google-play 1.png"
+                  alt="Google Play"
+                  class="w-5 h-5 md:w-6 md:h-6 object-contain shrink-0"
+                />
+
+                <div class="flex flex-col text-left leading-tight">
+                  <span
+                    class="text-[9px] md:text-[10px] font-bold tracking-wider text-gray-300 uppercase"
+                    >GET IT ON</span
+                  >
+                  <span
+                    class="text-xs md:text-sm font-medium tracking-wide font-sans mt-0.5 whitespace-nowrap"
+                    >Google Play</span
+                  >
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="flex items-center gap-2 bg-black text-white px-3 py-2 md:px-4 md:py-2.5 rounded-full hover:bg-[#212832] transition duration-200 cursor-pointer shadow-sm active:scale-95 w-full sm:w-auto min-w-[130px] md:min-w-[150px]"
+              >
+                <img
+                  src="apple (2) 1.png"
+                  alt="Apple Store"
+                  class="w-5 h-5 md:w-6 md:h-6 object-contain shrink-0"
+                />
+
+                <div class="flex flex-col text-left leading-tight">
+                  <span
+                    class="text-[6px] md:text-[7px] font-bold tracking-wider text-gray-300 uppercase"
+                    >Available on the</span
+                  >
+                  <span
+                    class="text-xs md:text-sm font-medium tracking-wide font-sans mt-0.5 whitespace-nowrap"
+                    >App Store</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-100 pt-10 text-center">
+        <p class="text-[#5E6282] font-medium text-xs md:text-sm">
+          All rights reserved @jadoo.co
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
