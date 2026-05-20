@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Back</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <div
+      class="sm:w-1/2 shadow-xl bg-white m-auto mt-10 justify-center items-center rounded-2xl flex flex-col text-center space-y-6 p-10"
+    >
+      <div class="w-10">
+        <img src="images/lock.png" alt="" />
+      </div>
+      <div class="space-y-2">
+        <h1 class="text-2xl font-extrabold">Welcome Back</h1>
+        <p class="text-gray-500 sm:text-xs md:text-sm">
+          Enter your credentials to access your account
+        </p>
+      </div>
+      <form action="" class="sm:w-full space-y-4">
+        <div class="flex flex-col text-start space-y-2">
+          <label for="email" class="text-gray-700 font-bold"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            placeholder="name@company.com"
+            class="border px-4 py-2 rounded-xl text-sm"
+          />
+        </div>
+        <div class="flex flex-col text-start space-y-2">
+          <label for="email" class="text-gray-700 font-bold">Password</label>
+          <input
+            type="email"
+            placeholder="........"
+            class="border px-4 py-2 rounded-xl text-sm"
+          />
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex space-x-2">
+            <input type="checkbox" />
+            <p class="sm:text-xs text-gray-500 font-medium">Remember me</p>
+          </div>
+          <div class="text-end">
+            <a class="text-blue-600 sm:text-xs md:text-sm font-bold">
+              Forgot password?
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-blue-500 rounded-xl">
+          <button
+            class="text-white sm:w-full py-3 sm:text-xs md:text-sm font-semibold font-mono"
+          >
+            Log In<i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </form>
+
+      <div>
+        <p class="text-sm text-gray-500">
+          Don't have an account yet?
+          <a href="" class="text-blue-500 font-medium">Sign up for free</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

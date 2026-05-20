@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
+    <div
+      class="sm:w-1/2 shadow-xl bg-white m-auto mt-10 rounded-2xl flex flex-col justify-center items-center text-center space-y-4 p-10"
+    >
+      <div class="w-10">
+        <img src="images/add-friend.png" alt="" />
+      </div>
+      <div class="space-y-2">
+        <h1 class="text-2xl font-extrabold">Create Account</h1>
+        <p class="text-gray-500 text-sm">
+          Join us today!It only takes a minute.
+        </p>
+      </div>
+      <form action="" class="text-start flex flex-col space-y-8">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 w-full">
+          <div class="flex flex-col space-y-2">
+            <label for="name" class="font-bold text-gray-700">Full Name</label>
+            <input
+              type="text"
+              placeholder="John Doe"
+              class="border px-4 py-2 rounded-xl text-sm bg-gray-50"
+            />
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <label for="email" class="font-bold text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              placeholder="name@company.com"
+              class="border px-4 py-2 rounded-xl text-sm"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <label for="password" class="font-bold text-gray-700">Password</label>
+          <input
+            type="password"
+            placeholder="........"
+            class="border px-4 py-2 rounded-xl text-sm"
+          />
+        </div>
+        <div class="flex flex-col space-y-2">
+          <label for="password" class="font-bold text-gray-700"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            placeholder="........"
+            class="border px-4 py-2 rounded-xl text-sm"
+          />
+        </div>
+        <div class="flex sm:gap-2 md:gap-4">
+          <input type="checkbox" value="" />
+          <p class="sm:text-xs md:text-sm">
+            I agree to the
+            <span class="underline text-purple-600">Terms of Service</span> and
+            <span class="underline text-purple-600">Privacy Policy.</span>"
+          </p>
+        </div>
+        <div>
+          <button
+            class="bg-purple-600 text-white w-full p-3 rounded-lg font-bold text-sm"
+          >
+            Create My Account >>
+          </button>
+        </div>
+      </form>
+      <div>
+        <p class="sm:text-xs md:text-sm">
+          Already have an account?<span class="text-purple-600"
+            >Sign in here</span
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
