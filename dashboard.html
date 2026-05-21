@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 p-0 h-screen w-screen overflow-hidden">
+    <main class="flex h-screen w-screen overflow-hidden bg-[#f5f6fa]">
+      <!-- side bar -->
+      <aside
+        id="sidebar"
+        class="fixed top-0 left-0 z-50 w-60 bg-[#0f172a] text-white flex flex-col h-full transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:translate-x-0 flex-shrink-0"
+      >
+        <div
+          class="flex items-center space-x-4 px-6 py-2 font-bold text-xl border-b border-slate-800 bg-gray-900"
+        >
+          <img src="img/smartphone.png" alt="" class="w-8" />
+          <h1>MobileShop</h1>
+
+          <button
+            id="close-sidebar"
+            class="md:hidden hover:text-white focus:outline-none text-white text-3xl"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <nav class="flex-1 p-4 space-y-3">
+          <h2 class="text-gray-500 text-lg font-semibold">MANAGEMENT</h2>
+          <ul class="flex flex-col justify-center space-y-4">
+            <li
+              class="border-b border-slate-800 p-3 hover:bg-purple-600 rounded-xl"
+            >
+              <a href="">Dashboard</a>
+            </li>
+            <li
+              class="border-b border-slate-800 p-3 hover:bg-purple-600 rounded-xl"
+            >
+              <a href="">Products</a>
+            </li>
+            <li
+              class="border-b border-slate-800 p-3 hover:bg-purple-600 rounded-xl"
+            >
+              <a href="">Orders</a>
+            </li>
+            <li
+              class="border-b border-slate-800 p-3 hover:bg-purple-600 rounded-xl"
+            >
+              <a href="">Users</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="border-t border-slate-500 p-4">
+          <button
+            class="w-full bg-gray-800 py-2 rounded-lg border border-slate-400 hover:bg-transparent"
+          >
+            Logout
+          </button>
+        </div>
+      </aside>
+
+      <div
+        id="sidebar-backdrop"
+        class="fixed inset-0 bg-black/40 z-40 hidden md:hidden"
+      ></div>
+
+      <div
+        class="md:flex-1 flex flex-col h-full min-w-0 overflow-hidden w-full"
+      >
+        <!-- Top navbar -->
+        <header
+          class="bg-white flex border-b border-gray-200 h-14 flex-shrink-0 items-center"
+        >
+          <button
+            id="open-sidebar"
+            class="md:hidden px-6 text-gray-600 hover:text-gray-900 focus:outline-none text-2xl"
+          >
+            ☰
+          </button>
+          <h1 class="text-xl text-gray-600 font-bold md:px-6">Dashboard</h1>
+        </header>
+
+        <!-- Main content -->
+
+        <section class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="flex space-x-2 bg-white border border-slate-100 rounded-xl shadow-sm p-4 m-4"
+          >
+            <div><img src="img/dollar.png" alt="" class="w-10" /></div>
+            <div class="flex flex-col">
+              <span class="text-gray-600">Total Sales</span>
+              <span class="text-lg font-bold"> $0.00 </span>
+            </div>
+          </div>
+          <div
+            class="flex space-x-2 bg-white border border-slate-100 rounded-xl shadow-sm p-4 m-4"
+          >
+            <div><img src="img/shopping-cart.png" alt="" class="w-10" /></div>
+            <div class="flex flex-col">
+              <span class="text-gray-600">Total Orders</span>
+              <span class="text-lg font-bold"> 0 </span>
+            </div>
+          </div>
+          <div
+            class="flex space-x-2 bg-white border border-slate-100 rounded-xl shadow-sm p-4 m-4"
+          >
+            <div><img src="img/group (1).png" alt="" class="w-10" /></div>
+            <div class="flex flex-col">
+              <span class="text-gray-600">Customers</span>
+              <span class="text-lg font-bold"> 1 </span>
+            </div>
+          </div>
+          <div
+            class="flex space-x-2 bg-white border border-slate-100 rounded-xl shadow-sm p-4 m-4"
+          >
+            <div><img src="img/danger.png" alt="" class="w-10" /></div>
+            <div class="flex flex-col">
+              <span class="text-gray-600">Low Stock Items</span>
+              <span class="text-lg font-bold"> 0 </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recent Order Sections -->
+
+        <section class="rounded-lg p-4">
+          <div
+            class="flex justify-between bg-white border rounded-tl-md rounded-tr-md p-3"
+          >
+            <h1 class="text-start text-gray-600">Recent Orders</h1>
+            <span>
+              <a href="" class="text-purple-500 font-extrabold text-lg pr-4"
+                >view all <i class="fa-solid fa-angle-right"></i></a
+            ></span>
+          </div>
+
+          <div class="w-full border-collapse">
+            <table class="w-full">
+              <thead class="bg-gray-50 text-gray-500 text-xs">
+                <tr class="border">
+                  <td class="px-2 py-4 text-xs font-semibold">ORDER ID</td>
+                  <td class="px-2 py-4 text-xs font-semibold">CUSTOMER</td>
+                  <td class="px-2 py-4 text-xs font-semibold">DATE</td>
+                  <td class="px-2 py-4 text-xs font-semibold">TOTAL</td>
+                  <td class="px-2 py-4 text-xs font-semibold">STATUS</td>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    const backdrop = document.getElementById("sidebar-backdrop");
+    const openBtn = document.getElementById("open-sidebar");
+    const closeBtn = document.getElementById("close-sidebar");
+
+    // Sidebar open Function
+    function openSidebar() {
+      sidebar.classList.remove("-translate-x-full");
+      backdrop.classList.remove("hidden");
+    }
+
+    // Sidebar close Function
+    function closeSidebar() {
+      sidebar.classList.add("-translate-x-full");
+      backdrop.classList.add("hidden");
+    }
+
+    // Event Listeners
+    openBtn.addEventListener("click", openSidebar);
+    closeBtn.addEventListener("click", closeSidebar);
+    backdrop.addEventListener("click", closeSidebar);
+  </script>
+</html>
